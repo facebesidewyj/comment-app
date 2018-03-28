@@ -5,6 +5,10 @@ import CommentInput from './CommentInput';
 class CommentApp extends Component {
   constructor() {
     super();
+    /**
+     * 当某个状态被多个组件依赖或者影响时，就该把该状态提升到这些组件最近的公共父组件中，
+     * 用props传递数据或者函数来管理。
+     */
     this.state = {
       comments: []
     };
